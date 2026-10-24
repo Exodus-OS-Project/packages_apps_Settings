@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        android:key="additional_settings"
+        android:title="@string/additional_settings_title">
+
+    <!-- Allow application downgrade -->
+    <com.custom.settings.preferences.SystemSettingSwitchPreference
+        android:key="allow_downgrade"
+        android:title="@string/allow_downgrade_title"
+        android:summary="@string/allow_downgrade_summary"
+        android:defaultValue="false" />
+
+    <!-- Floating rotation button -->
+    <com.custom.settings.preferences.SystemSettingSwitchPreference
+        android:key="enable_rotation_button"
+        android:title="@string/floating_rotation_button_title"
+        android:summary="@string/floating_rotation_button_summary"
+        android:defaultValue="true" />   
+
+    <!-- Disable flash sms -->
+    <com.custom.settings.preferences.SystemSettingSwitchPreference
+        android:key="disable_flash_sms"
+        android:title="@string/disable_flash_sms_title"
+        android:summary="@string/disable_flash_sms_summary"
+        android:defaultValue="false"/>
+
+</PreferenceScreen>
